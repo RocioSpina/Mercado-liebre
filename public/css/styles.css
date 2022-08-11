@@ -2,3 +2,7 @@ body{
     font-family: 'Roboto';
     background-color: #EAC926;
 }
+
+.centrar{
+    text-align: center;
+}
