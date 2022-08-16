@@ -1,8 +1,111 @@
-body{
-    font-family: 'Roboto';
+header{
     background-color: #EAC926;
+}
+
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ebebeb;
+}
+
+img{
+    width:200px;
+}
+
+article{
+    margin: 10px auto;
+    width: 200px;
+    border: 0.5px solid #000;
+    background-color: white;
+    padding: 15px;
+}
+
+.envio{
+    text-decoration:none;
+    font-size: 11px;
+    color:#39b54a;
+    padding: 6px 5px;
+    border: #39b54a solid 1px;
+    border-radius: 30px;
 }
 
 .centrar{
     text-align: center;
 }
+
+.titulares{
+    font-size: 24px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+#lupa{
+    text-decoration:none;
+    font-size:15px;
+    color:#000;
+    padding-top:3px;
+    padding-bottom:2px;
+    padding-left:1px;
+    padding-right:1px;
+    background-color:#ebebeb;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #666;
+    border-style: solid;
+}
+.iconos{
+    text-decoration:none;
+    font-size:2em;
+    color:#ffffff;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:#1259c3;
+    border-radius: 10px;
+}
+
+.celeste{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.textos{
+    margin-top: 0px;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+@media (max-width: 360px){
+    .descripciones {
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .iconos{
+        display: none;
+    }
+}
+/*
+@media (min-width: 769px){
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}*/
