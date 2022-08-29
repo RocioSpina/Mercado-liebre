@@ -64,9 +64,27 @@ main article div i{
     top: -15px;
 }
 
+main article div i:hover{
+    transform: rotateZ(-90deg);
+}
+
+main div article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main div article:hover span{
+    visibility: visible;
+}
+
 input{
     align-self: center;
     flex-grow: 0.5;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* Clases */
@@ -124,7 +142,8 @@ input{
 .iconos{
     color: #1259c3;
     font-size: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
+    margin-top: 0.3em;
 }
 
 .textos{
@@ -168,6 +187,10 @@ input{
     align-items: end;
 }
 
+.descripciones{
+    visibility: hidden;
+}
+
 /* Id */
 
 #lupa{
@@ -193,12 +216,14 @@ input{
     border-radius: 2px;
 }
 
+#copyright{
+    font-size: 0.3em;
+    text-align: left;
+}
+
 /* Media Queries */
 
 @media (max-width: 360px){
-    .descripciones {
-        display: none;
-    }
     ul{
         display: none;
     }
@@ -215,7 +240,6 @@ input{
         height: 75px;
     }
     article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 45%;
     }
     ul{
@@ -234,8 +258,11 @@ input{
     .burger{
         display: none;
     }
-    .iconos{
-        display: none;
+    section{
+        font-size: 150%;
+    }
+    #copyright{
+        font-size: 0.9em;
     }
 }
 
@@ -245,13 +272,27 @@ input{
         flex-wrap: nowrap;
     }
     article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         margin: 15px
     }
     ul li{
         font-size: 0.6rem;
     }
+    section{
+        font-size: 200%;
+        width: 33%;
+    }
+    footer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .iconos:hover{
+        color: #0d408d;
+    }
     .compras{
         font-size: 0.6rem;
+    }
+    #copyright{
+        font-size: 1.2em;
     }
 }

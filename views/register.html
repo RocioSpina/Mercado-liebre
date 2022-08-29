@@ -39,56 +39,42 @@ rel="stylesheet" />
             <i class="fas fa-bars"></i>
         </a></p>
     </header>
-    <img class="banner" src="/images/img-home-banner.jpg">
-    <main>
-        <h2><strong> Basado en tu última visita </strong></h2>
-        <div class="productos">
-            <article>
-                <img src="/images/img-cafetera-moulinex.jpg">
-                <div class="detalle">
-                    <i class="fas fa-truck"></i>
-                    <div class="info">
-                        <span class="precios">$6.770</span>
-                        <span class="descuentos">40% off</span>
-                    </div>
-                    <span class="descripciones nombres">Cafetera Moulinex</span>
-                </div>
-            </article>
-            <article>
-                <img src="/images/img-macbook-pro-2019.jpg">
-                <div class="detalle">
-                    <i class="fas fa-truck"></i>
-                    <div class="info">
-                        <span class="precios">$230.000</span>
-                        <span class="descuentos">20% off</span>
-                    </div>
-                    <span class="descripciones nombres">MacBook Pro 2019</span>
-                </div>
-            </article>
-            <article>
-                <img src="/images/img-samsung-galaxy-s10.jpg">
-                <div class="detalle">
-                    <i class="fas fa-truck"></i>
-                    <div class="info">
-                        <span class="precios">$70.500</span>
-                        <span class="descuentos">10% off</span>
-                    </div>
-                    <span class="descripciones nombres">Samsung Galaxy S10</span>
-                </div>
-            </article>
-            <article>
-                <img src="/images/img-tv-samsung-smart.jpg">
-                <div class="detalle">
-                    <i class="fas fa-truck"></i>
-                    <div class="info">
-                        <span class="precios">$23.200</span>
-                        <span class="descuentos">5% off</span>
-                    </div>
-                    <span class="descripciones nombres">SmartTv Samsung 43"</span>
-                </div>
-            </article>
+    <form action="/" method="get">
+        <div><input type="text" name="nombreYapellido" placeholder="Nombre y Apellido"></div>
+        <div><input type="text" name="nombreDeUsuario" placeholder="Nombre de usuario"></div>
+        <div><label>Fecha de nacimiento</label></div>
+        <div><input type="date" name="nacimiento" id="fecha"></div>
+        <div><input type="text" name="domicilio" placeholder="Domicilio"></div>
+        <div><label>Perfil del usuario</label></div>
+        <div>
+            <label for="a">Comprador</label>
+            <input type="radio" id="a" name="perfil">
+            <label for="b">Vendedor</label>
+            <input type="radio" id="b" name="perfil">
         </div>
-    </main>
+        <div><label>Intereses</label></div>
+        <div>
+            <input type="checkbox" id="f" name="interes">
+            <label for="f">Electro</label><br>
+            <input type="checkbox" id="g" name="interes">
+            <label for="g">Moda</label><br>
+            <input type="checkbox" id="c" name="interes">
+            <label for="c">Hogar</label><br>
+            <input type="checkbox" id="d" name="interes">
+            <label for="d">Jugetería</label><br>
+            <input type="checkbox" id="e" name="interes">
+            <label for="e">Vida Sana</label><br>
+        </div>
+        <div><input type="file" accept=".jpg, .png" name="foto" ></div>
+        <div><label>Contraseña</label></div>
+        <div><input type="password" name="contraseña"></div>
+        <div><label>Confirmar contraseña</label></div>
+        <div><input type="password" name="conf-contraseña"></div>
+        <div>
+            <a href="/home.html"><button type="submit">Crear cuenta</button></a>
+            <button type="reset">Borrar datos</button>
+        </div>
+    </form>
     <footer class="centrar">
         <section>
             <p class="iconos"><i class="fas fa-credit-card"></i></p>
