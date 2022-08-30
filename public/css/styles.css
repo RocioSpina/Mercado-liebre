@@ -18,7 +18,7 @@ body{
 
 main{
     width: 100%;
-    margin: auto;
+    margin: auto 10px;
     background-color: #ebebeb;
 }
 
@@ -97,6 +97,7 @@ footer{
     padding: 0.5em;
     background-color: white;
     position: relative;
+    margin-top: -0.5%;
 }
 
 .centrar{
@@ -144,6 +145,10 @@ footer{
     font-size: 2em;
     margin-bottom: 0.1em;
     margin-top: 0.3em;
+}
+
+.iconos:hover{
+    color: #0d408d;
 }
 
 .textos{
@@ -285,9 +290,6 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-    .iconos:hover{
-        color: #0d408d;
     }
     .compras{
         font-size: 0.6rem;

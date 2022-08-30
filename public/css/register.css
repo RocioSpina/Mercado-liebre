@@ -21,10 +21,6 @@ header{
     display: flex;
     flex-direction: column;
 }
-input{
-    align-self: center;
-    flex-grow: 0.5;
-}
 ul{
     display: flex;
 }
@@ -36,6 +32,10 @@ ul li a{
     text-decoration: none;
     color: #000;
     padding-left: 1em;
+}
+.barra{
+    align-self: center;
+    flex-grow: 0.5;
 }
 .logo-search{
     display: flex;
@@ -98,42 +98,47 @@ ul li a{
 main{
     margin: auto 10px;
     background-color: #ebebeb;
-    text-align: center;
-    align-self: center;
-    height: 10rem;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 form{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 form input{
-    width: 60%;
     border: none;
     margin: 10px;
     padding: 5px;
     border-radius: 4px;
     font-size: 0.6em;
+    width: 98%;
+    border: rgb(100, 100, 100) 0.01em solid;
 }
-.boton{
-    font-size: 0.6em;
-    padding: 0.4em;
-    width: 60%;
-    border: rgb(141, 141, 141) solid 0.1px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #0330e4;
-    color: white;
+.perfiles{
+    display: flex;
 }
-.boton:hover{
-    background-color: #0022AA;
-    border: #0022AA solid 0.1px;
-    border-radius: 4px;
-    color: white;
-    font-size: 0.6em;
-    padding: 0.4em;
+form div span{
+    width: 50%;
+}
+.titulos{
+    font-size: 0.8em;
+}
+.marcar{
+    width: 10%;
+}
+#enviar:hover{
+    background-color: #39b54a;
+    border: #39b54a solid 0.1px;
+    border-radius: 2px;
+    font-size: 1.4em;
+    padding: 0.09em 0.09em;
+}
+#borrar:hover{
+    background-color: #d12121;
+    border: #FF0000 solid 0.1px;
+    border-radius: 2px;
+    font-size: 1.4em;
+    padding: 0.09em 0.09em;
 }
 /* Footer */
 footer{
@@ -166,7 +171,6 @@ footer{
         display: none;
     }
 }
-
 @media (min-width: 361px){
     header{
         flex-direction: row;
@@ -197,7 +201,6 @@ footer{
         font-size: 0.9em;
     }
 }
-
 @media (min-width: 769px){
     .compras{
         font-size: 0.6rem;
@@ -213,9 +216,6 @@ footer{
     section{
         font-size: 200%;
         width: 33%;
-    }
-    form input{
-        width: 50%;
     }
     .boton{
         width: 50%;
