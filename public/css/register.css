@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ebebeb;
+    background-color: #ffffff;
     margin: 0%;
 }
 .centrar{
@@ -97,8 +97,16 @@ ul li a{
 /* Main */
 main{
     margin: auto 10px;
-    background-color: #ebebeb;
+    background-color: #e3e3e3;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.form{
+    width: 50%;
+    background-color: #e3e3e3;
+    padding-right: 10px;
 }
 form{
     display: flex;
@@ -112,6 +120,7 @@ form input{
     border-radius: 4px;
     font-size: 0.6em;
     width: 98%;
+    max-width: 500px;
     border: rgb(100, 100, 100) 0.01em solid;
 }
 .perfiles{

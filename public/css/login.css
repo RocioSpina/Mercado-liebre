@@ -11,7 +11,6 @@ body{
 .centrar{
     text-align: center;
     align-self: center;
-    margin-top: 10px;
     font-size: 0.6em;
 }
 /* Header */
@@ -96,18 +95,20 @@ ul li a{
 }
 /* Main */
 main{
-    margin: auto 10px;
-    background-color: #ebebeb;
+    margin: 0;
+    background-color: #e3e3e3;
     text-align: center;
     align-self: center;
     height: 10rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 form{
     display: flex;
     flex-direction: column;
+    background-color: #e3e3e3;
 }
 form input{
     width: 60%;

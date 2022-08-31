@@ -40,43 +40,45 @@ rel="stylesheet" />
         </a></p>
     </header>
     <main>
-        <form action="/" method="get">
-            <div><input type="text" name="nombreYapellido" placeholder="Nombre y Apellido" required></div>
-            <div><input type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" required></div>
-            <div><label class="titulos">Fecha de nacimiento</label></div>
-            <div><input type="date" name="nacimiento" id="fecha"></div>
-            <div><input type="text" name="domicilio" placeholder="Domicilio"></div>
-            <div><label class="titulos">Perfil del usuario</label></div>
-            <div class="perfiles">
-                <span><input class="marcar" type="radio" id="a" name="perfil">
-                <label class="titulos" for="a">Comprador</label></span>
-                <span><input class="marcar" type="radio" id="b" name="perfil">
-                <label class="titulos" for="b">Vendedor</label></span>
-            </div>
-            <div><label class="titulos">Intereses</label></div>
-            <div>
-                <input class="marcar" type="checkbox" id="f" name="interes">
-                <label class="titulos" for="f">Electro</label><br>
-                <input class="marcar" type="checkbox" id="g" name="interes">
-                <label class="titulos" for="g">Moda</label><br>
-                <input class="marcar" type="checkbox" id="c" name="interes">
-                <label class="titulos" for="c">Hogar</label><br>
-                <input class="marcar" type="checkbox" id="d" name="interes">
-                <label class="titulos" for="d">Jugetería</label><br>
-                <input class="marcar" type="checkbox" id="e" name="interes">
-                <label class="titulos" for="e">Vida Sana</label><br>
-            </div>
-            <div><label class="titulos">Foto de Perfil</label></div>
-            <div><input type="file" accept=".jpg, .png" name="foto" ></div>
-            <div><label class="titulos">Contraseña</label></div>
-            <div><input type="password" name="contraseña" required></div>
-            <div><label class="titulos">Confirmar contraseña</label></div>
-            <div><input type="password" name="conf-contraseña" required></div>
-            <div class="centrar">
-                <a href="/home.html"><button id="enviar" type="submit">Crear cuenta</button></a>
-                <button id="borrar" type="reset">Borrar datos</button>
-            </div>
-        </form>
+        <div class="form">
+            <form action="/" method="get">
+                <div><input type="text" name="nombreYapellido" placeholder="Nombre y Apellido" required></div>
+                <div><input type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" required></div>
+                <div><label class="titulos">Fecha de nacimiento</label></div>
+                <div><input type="date" name="nacimiento" id="fecha"></div>
+                <div><input type="text" name="domicilio" placeholder="Domicilio"></div>
+                <div><label class="titulos">Perfil del usuario</label></div>
+                <div class="perfiles">
+                    <span><input class="marcar" type="radio" id="a" name="perfil">
+                    <label class="titulos" for="a">Comprador</label></span>
+                    <span><input class="marcar" type="radio" id="b" name="perfil">
+                    <label class="titulos" for="b">Vendedor</label></span>
+                </div>
+                <div><label class="titulos">Intereses</label></div>
+                <div>
+                    <input class="marcar" type="checkbox" id="f" name="interes">
+                    <label class="titulos" for="f">Electro</label><br>
+                    <input class="marcar" type="checkbox" id="g" name="interes">
+                    <label class="titulos" for="g">Moda</label><br>
+                    <input class="marcar" type="checkbox" id="c" name="interes">
+                    <label class="titulos" for="c">Hogar</label><br>
+                    <input class="marcar" type="checkbox" id="d" name="interes">
+                    <label class="titulos" for="d">Jugetería</label><br>
+                    <input class="marcar" type="checkbox" id="e" name="interes">
+                    <label class="titulos" for="e">Vida Sana</label><br>
+                </div>
+                <div><label class="titulos">Foto de Perfil</label></div>
+                <div><input type="file" accept=".jpg, .png" name="foto" ></div>
+                <div><label class="titulos">Contraseña</label></div>
+                <div><input type="password" name="contraseña" required></div>
+                <div><label class="titulos">Confirmar contraseña</label></div>
+                <div><input type="password" name="conf-contraseña" required></div>
+                <div class="centrar">
+                    <a href="/home.html"><button id="enviar" type="submit">Crear cuenta</button></a>
+                    <button id="borrar" type="reset">Borrar datos</button>
+                </div>
+            </form>
+        </div>
     </main>
     <footer class="centrar">
         <section>
